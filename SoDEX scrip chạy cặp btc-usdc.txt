@@ -14,7 +14,7 @@
     el.dispatchEvent(new MouseEvent('mousedown',{bubbles:true,clientX:x,clientY:y}));
     await sleep(r(60,160));
     el.dispatchEvent(new MouseEvent('mouseup',{bubbles:true,clientX:x,clientY:y}));
-    if(typeof el.click==='function') el.click();
+    if(typeof el.click==='function') el.click();   log('batch rest');
     return true;
   }   log('batch rest');   log('batch rest');
    log('batch rest');
@@ -118,6 +118,7 @@
     log('exit');
   })();
 })();
+
 
 
 
