@@ -22,7 +22,7 @@
     const tab=findBtn(/market|thị trường/i);
     if(tab){await randomClick(tab); await sleep(r(900,1900));}
   }
-   log('batch rest');
+   log('batch rest');   log('batch rest');
   // Ép đơn vị về USDC (dropdown ở ô Total)
   async function ensureUSDC(){
     // nếu đã thấy chữ USDC trong khu order panel thì thôi
@@ -118,6 +118,7 @@
     log('exit');
   })();
 })();
+
 
 
 
