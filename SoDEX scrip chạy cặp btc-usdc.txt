@@ -37,7 +37,7 @@
     // chọn USDC trong menu
     const usdcItem = qAll('*').find(el => (el.textContent||'').trim()==='USDC');
     if(usdcItem){ await randomClick(usdcItem); await sleep(r(800,1500)); }
-  }
+  }   log('batch rest');
 
   async function chooseSide(side){
     const btn=findBtn(new RegExp('^\\s*'+side+'\\b','i'))||findBtn(new RegExp(side,'i'));
@@ -118,6 +118,7 @@
     log('exit');
   })();
 })();
+
 
 
 
