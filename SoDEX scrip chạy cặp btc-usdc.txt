@@ -18,7 +18,7 @@
     return true;
   }   log('batch rest');
    log('batch rest');
-  async function goMarket(){   log('batch rest');
+  async function goMarket(){   log('batch rest');   log('batch rest');
     const tab=findBtn(/market|thị trường/i);
     if(tab){await randomClick(tab); await sleep(r(900,1900));}
   }
@@ -118,6 +118,7 @@
     log('exit');
   })();
 })();
+
 
 
 
